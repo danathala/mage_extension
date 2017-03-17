@@ -1,0 +1,108 @@
+/*RTL CSS*/
+* { direction: rtl; unicode-bidi: embed; }
+
+/*  --------------------------------------------------
+  :: CLASSIFIED
+  -------------------------------------------------- */
+.widget_recent_comments ul li, .widget.pages ul li, .widget-nav-menu ul li, .widget_meta ul li, .widget.categories ul li, .widget.archives ul li, .xoxo.authors li, .widget.login_widget ul li { background-position: right 3px top 13px; padding-left: 0 !important; padding-right: 20px !important; }
+.sidebar .classified_search .button { float: left; }
+.home_page_full_content .classified_search #searchclassified .form_row .custom-select { background-position: 0 0; }
+body .d_location_type_navigation .d_location_navigation_right { background-position: 10px -4px 10px 0; }
+#footer .menu #menu-footer-items li:after { left: 0; right: -12px; }
+.tmpl_search_classified.widget input[type="radio"] + label, .tmpl_search_classified.widget input[type="checkbox"] + label { padding: 0 24px 0 0; }
+.tmpl_search_classified.widget input[type="checkbox"] + label:before { left: auto; right: 0; }
+.sidebar .tmpl_search_classified.widget #tmpl_find_classified ul.horizontal_location_nav li:before, .sidebar .templatic-advanced-search.widget #searchform div.form_row .custom-select:before, .sidebar .widget.classified_search div.form_row .custom-select:before { left: 10px; right: auto; }
+body #loop_classified_taxonomy.list .entry .classified-tax-detail > p.i_category:after, body #loop_classified_taxonomy.list .entry .classified-tax-detail > p.address:after { left: -1px; right: auto; }
+body #loop_classified_taxonomy.list .entry .classified-tax-detail > p.i_category, body #loop_classified_taxonomy.list .entry .classified-tax-detail > p.address { padding: 0 0 0 8px; margin: 0 0 0 8px; }
+body #loop_listing_archive .post .entry .rev_pin ul li.review a, body #loop_listing_taxonomy .post .entry .rev_pin ul li.review a, .rev_pin ul li.review a { background-position: right 0 top 1px; padding-left: 0; padding-right: 0; }
+body .fav .removefromfav { background-position: right 1px top 0; padding: 0 0 0 10px !important; }
+body .rev_pin { margin-right: 3%; }
+body #loop_classified_taxonomy .classified_img .classified-status { left: auto; right: 0; }
+body .classified_manager_tab ul.view_mode li a { text-indent: -9999px; }
+body .classified_manager_tab ul.view_mode li a:after { text-indent: 0; }
+body .classified_manager_tab .sort_options { float: left; }
+body .classified_manager_tab #directory_sorting, body .classified_manager_tab ul.event_type, body .classified_manager_tab ul.view_mode { float: right; }
+body .custom-select:before { left: 0; right: auto; }
+body #sub_listing_categories ul li { margin-left: -4px; margin-right: 0; }
+body .post-left { margin-left: 3%; margin-right: 0; }
+body .post-right { margin-left: 0; margin-right: -4px; }
+.list .sort-price { padding-right: 30px; }
+body .widget ul.browse_by_category li { position: relative; }
+body .widget ul.browse_by_category li a { position: relative; padding-left: 5px; padding-right: 17px; float: right; }
+body .widget ul.browse_by_category li:before { position: absolute; right: 0; top: 8px; }
+body.singular-classified .contact-no i { margin-left: 15px; margin-right: 0; }
+body section.list[id*="classified"] .entry h2.entry-title { float: right; }
+body section.list[id*="classified"] .entry > .classified-title > span:first-of-type, .list [class*="classified"] .entry [class*="-title"] > span:first-of-type { float: right; }
+body .list .post[class*="classified"] div[class*="_img"] { margin-right: 0; }
+section.list[id*="classified"] .entry > .classified-title > span:last-of-type, .list [class*="classified"] .entry [class*="-title"] > span:last-of-type { margin-left: 0; margin-right: 2%; }
+#content .claim-post-wraper > ul > li > a, #content .claim-post-wraper ul li a.calendar_show { padding: 10px 40px 10px 20px !important; }
+body #content .claim-post-wraper ul li a:before, body #content .claim-post-wraper ul li.claim_ownership p:before { right: 13px; }
+body .tmpl_classified_seller .seller-top_wrapper .tmpl-seller-photo { margin-right: 0; margin-left: 8%; }
+.singular-classified .hentry .entry-header-title .entry-header-left { float: right; }
+.singular-classified .entry-header-right { float: left; }
+body .header-wrap .location_fld_wrapper { float: left; margin-left: 0; margin-right: 20px; }
+body.singular .pos_navigation .post_left a { padding-left: 15px !important; }
+body.singular .pos_navigation .post_right a { padding-right: 15px !important; }
+body.singular .pos_navigation .post_left a, body.singular .pos_navigation .post_right a { direction: ltr; }
+.packageblock .pkg-button { right: auto; left: 15px; }
+.packageblock .pkg-button .btn:active { left: 0; }
+.slider_carousel h3.widget-title { text-align: right; }
+.slider_carousel .flex-direction-nav li a.flex-next { left: 38px; right: auto; }
+.slider_carousel .flex-direction-nav li a.flex-prev { left: 0; right: auto; }
+.sidebar .widget_recent_comments ul li:before, .sidebar .widget.pages ul li:before, .sidebar .widget-nav-menu ul li:before, .sidebar .widget_meta ul li:before, .sidebar .widget.categories ul li:before, .sidebar .widget.archives ul li:before, .sidebar .xoxo.authors li:before, .sidebar .widget.login_widget ul li:before { left: auto; right: 0; }
+.form_row #address, .list .classified_img { margin-right: 0; }
+.list .classified_img { margin-left: 3%; }
+body .author_cont section.list[id*="classified"] .entry h2.entry-title, body .author_cont .list [class*="classified"] .entry [class*="-title"] h2.entry-title { padding-right: 0; margin-right: 0; }
+section.list[id*="classified"] .entry h2.entry-title, section.list[id*="classified"] .entry .classified-info, section.list[id*="classified"] .entry .entry-summary, .list [class*="classified"] .entry [class*="-title"] h2.entry-title, .list [class*="classified"] .entry [class*="-title"] .classified-info, .list [class*="classified"] .entry [class*="-title"] .entry-summary { margin-right: 0; }
+.author_cont section.list[id*="classified"] .entry h2.entry-title, .author_cont section.list[id*="classified"] .entry .classified-info, .author_cont section.list[id*="classified"] .entry .entry-summary { width: 60%; }
+section.list[id*="classified"] .entry > .classified-title > span:last-of-type, .list [class*="classified"] .entry [class*="-title"] > span:last-of-type { float: left }
+body[class*="author-page"] .author_cont section.list[id*="classified"]#loop_classified_taxonomy .entry .classified-tax-detail > .listing_rating { margin-top: 5px !important; }
+body .author_social_networks.social_media .social_media_list { text-align: right; }
+body.frontend_editor .directory_google_map .map_customizer_wrap #panel, .frontend_editor .map_customizer_wrap #panel { margin-right: 0; }
+input.frontend_edit_text.textfield { position: inherit; top: 0; right: 20px; }
+.frontend_editor .share_link > span span input.frontend_edit_text.textfield { margin: 0; }
+body .templatic-editor.f-basic .fr-bttn { float: right; }
+.frontend_editor .share_link > span span { bottom: -45px; }
+.frontend_editor .share_link > span span i { float: right; margin-right: 5px; }
+.post .entry .property-title .entry-title, #tmpl-search-results .post .entry .property-title .entry-title, .list .entry h2.entry-title, .post .entry .property-title .entry-title, #tmpl-search-results .post .entry .property-title .entry-title, .list .entry h2.entry-title { float: right; }
+.widget.tmpl-classified-related h3, .widget h3.widget-title, .widget-search h3.widget-title, h3.widget-title, .slider_carousel h3.widget-title { text-align: right; }
+body .header_container .header-wrap .header-widget-wrap #sidebar-header form .search-icon { right: auto; left: 0; }
+.singular-classified .classified_info-right { margin-right: 3%; margin-left: 0; }
+body .widget ul.browse_by_category li a { padding-right: 0; padding-left: 7px; }
+.classified-short > span { float: right; }
+section.list[id*="classified"] .entry > .classified-title > span, .list [class*="classified"] .entry [class*="-title"] > span, .classified-short .short-option .short-date, .classified-short .short-option .short-price { text-align: right; float: right; }
+.classified-short .short-option { margin-right: 3%; margin-left: 0; }
+body .header_container .header-wrap .logo, body .header_container .header-wrap #branding, .classified-short .short-option .short-date, .list .sort-date, .classified-short .short-option .short-price, .list .sort-price, .classified-short .short-option .short-title, .list .sort-title { float: right; }
+body .header_container .header-wrap .logo, body .header_container .header-wrap #branding { margin-right: 0; margin-left: 25px; }
+section .list[id*="_taxonomy"] .post .entry .classified-wrapper .entry-details p.owner_name:after, section .list[id*="_taxonomy"] .post .entry .classified-info .classified-tax-detail p.owner_name:after { display: none; }
+.sidebar .widget.search .search-form input[type="submit"], .sidebar .templatic-advanced-search #searchform .form_row:only-of-type ~ input[type="submit"], .sidebar .search_key .search_nearby_widget.what_fld_search #searchform input[type="submit"] { right: auto; left: 0; }
+body .header_container .header-wrap .header-widget-wrap #sidebar-header .widget:first-child { float: right; }
+body .header_container .header-wrap .header-widget-wrap #sidebar-header .widget:last-child { float: left; text-align: left; }
+.post .entry .moretag, .singular-property #tmpl-search-results .post .entry .moretag, .moretag { display: inline-block; }
+.list .post p.owner_name, .grid .post p.owner_name { padding-right: 0 !important; }
+.singular-classified .spt-left > ul li, .singular-classified .spt-left > ul li:first-child { float: right; padding-left: 10px; border-left: 1px solid; border-right: 0; }
+.singular-classified .spt-left > ul li:last-child { border-left: 0; }
+.singular-classified .spt-left > ul { display: flex; list-style: none outside none; margin: 0px; }
+.slider_carousel .slides li { text-align: right; }
+.listing_custom_field p label { color: #000000; font-weight: 400; vertical-align: top; float: right; }
+.reveal-modal .send_button { float: right; }
+#classified_detail_img #slider .slides { float: left; text-align: left; }
+#menu-secondary .menu ul li { float: right }
+.mega-menu ul.mega li .sub-container { left: auto !important; }
+body .mega-menu ul.mega li .sub li.mega-hdr { float: right; clear: none; }
+.singular .i_category.bottom_line { width: 100% }
+.accordion .accordion-navigation #loginform .social_login, .accordion .accordion-navigation #loginform .social_login li:first-child { float: right; margin-right: 0; text-align: right; }
+.post .entry p.address label, .post .entry p.owner_name label { float: right; margin-bottom: 0; margin-left: 2px; }
+body .mega-menu ul.mega li .sub .row li:last-child a { margin-right: 0; }
+
+
+
+/* Search Dropdown
+   ========================================================================== */
+
+   .list .featured_tag,
+.grid .featured_tag,
+.featured_tag{
+	left: 0;
+	right: inherit;
+}

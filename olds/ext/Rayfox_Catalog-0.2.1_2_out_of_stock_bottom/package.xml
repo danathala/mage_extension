@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+    <name>Rayfox_Catalog</name>
+    <version>0.2.1</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension will move all out of stock products to the bottom of the category product list page.</summary>
+    <description> If you want to show out of stock products but don't want them to on the top of your product list page, this extension can help you.&#xD;
+  You only need to switch it on on Magento configuration and it will  move all out of stock products to the bottom of the product list page.&#xD;
+  The configuration depends on &amp;quot;show out of stock product&amp;quot;, it will be hidden if not allowed display out of stock products.&#xD;
+&lt;p /&gt;&#xD;
+&lt;h3&gt;Features:&lt;/h3&gt;&#xD;
+&lt;ul&gt;&#xD;
+ &lt;li&gt; Always show out of stock products on the bottom of the category page. &lt;/li&gt;&#xD;
+ &lt;li&gt;Easy setup, just turn on from Magento backend, and it works! &lt;/li&gt;&#xD;
+ &lt;li&gt; Configurable settings, it depends on &amp;quot;show out of stock product&amp;quot;, it will be hidden if not allowed display out of stock products. &lt;/li&gt;&#xD;
+ &lt;li&gt;Support both configurable and simple products now.&lt;/li&gt;&#xD;
+&lt;/ul&gt;</description>
+    <notes>Add support to search results.</notes>
+    <authors><author><name>Rayfox</name><user>rayfox</user><email>rayzhang@email.com</email></author></authors>
+    <date>2014-10-15</date>
+    <time>06:49:30</time>
+    <contents><target name="magecommunity"><dir name="Rayfox"><dir name="Catalog"><dir name="Helper"><file name="Data.php" hash="1bf6dd400e723b13c790b4a08bfd7f4d"/></dir><dir name="Model"><file name="Layer.php" hash="f7ae75d4cbe430501bc2fa3188f06850"/><dir name="Search"><file name="Layer.php" hash="0944ffeab2934918b193cee2d0f47431"/></dir><file name=".DS_Store" hash="64ef2c9424e6b3669c041438abea4fdf"/></dir><dir name="etc"><file name="config.xml" hash="d1bb7daa665cc265b31c572cfec8bf8a"/><file name="system.xml" hash="63ef7de3d3bb5b82eb6cdd5be28d5f7d"/></dir><file name=".DS_Store" hash="ce6e6b7b4d09237a2e3c9362b3b30466"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Rayfox_Catalog.xml" hash="45279cdc4ceec7308127aae41ec7badd"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

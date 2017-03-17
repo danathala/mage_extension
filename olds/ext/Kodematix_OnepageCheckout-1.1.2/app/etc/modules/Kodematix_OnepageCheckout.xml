@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Kodematix_OnepageCheckout>
+            <active>true</active>
+            <codePool>local</codePool>
+			<version>1.1.2</version>
+        </Kodematix_OnepageCheckout>
+    </modules>
+</config>

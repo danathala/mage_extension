@@ -1,0 +1,61 @@
+<div class="zip_container">
+	<label for="zip_code">Zip Code</label>
+	<input type="text" id="zip_code" class="zip_code" maxlength="6" value="110052" />
+	<?php //echo $this->getBlockHtml('formkey') ?>
+	<button class="zip_code_button" type="button">Check Cod</button>
+	<div class="messages">
+		<div class="error"></div>
+		<div class="success"></div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+jQuery(document).ready(function() {
+	jQuery('#zip_code').on('keypress', function(e) {
+		if(e.keyCode==13) {
+			varifyZipCode();
+		}
+	});
+	jQuery(document).on('click','.zip_code_button',varifyZipCode);
+});
+
+	function varifyZipCode (e) {
+
+		var zip_code = jQuery.trim(jQuery('#zip_code').val());
+		var form_key = jQuery('input[type=hidden][name=form_key]').val();
+		//console.log(zip_code);
+		jQuery('.zip_container .success, .zip_container .error').empty();
+		
+		if(zip_code != "" && isNaN(zip_code) == false && zip_code.length == 6) {
+		
+			sendData		=	{
+				zipcode: zip_code,
+				timezone: '<?php echo Mage::getStoreConfig('general/locale/timezone'); ?>',
+				timestamp: '<?php echo Mage::getModel('core/date')->timestamp(time()); ?>',
+				form_key: form_key
+			}
+			console.log(sendData);
+			//return false;
+			jQuery.ajax({
+				type: "POST",
+				dataType: 'json',
+				url: "<?php echo $this->getUrl('checkdelivery/index/index'); ?>",
+				data: sendData,
+				success: function(response){
+					if(response.result) {
+						jQuery('.zip_container .success').html(response.message);
+					} else {
+						jQuery('.zip_container .error').html(response.error);
+					}
+				}
+			});
+		} else {
+			jQuery(".zip_container .error").html("Enter valid pin code");
+		}
+	}
+
+//]]>
+</script>

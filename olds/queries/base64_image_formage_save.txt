@@ -1,0 +1,17 @@
+$base64_string = $_POST['image_src']; // will be in the format 'data:image/jpeg;base64,/9HvTM470buTUsexKD0o3c4NRFjRu...etc
+
+$base64_string = preg_replace( '/data:image\/.*;base64,/', '', $base64_string ); // The header needs stripping
+
+
+
+$output_file = 'myfile.jpg' // Clearly you'd need to adjust that based on the file type sent, eg gif, png
+
+$image = fopen( $output_file, 'wb' ); 
+
+fwrite( $image, base64_decode( $base64_string) ); 
+
+fclose( $image ); 
+
+
+
+// process the saved file as normal

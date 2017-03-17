@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Tech_CustomExportImport>
+      <version>0.1.0</version>
+    </Tech_CustomExportImport>
+  </modules>
+  <global>
+    <helpers>
+      <customexportimport>
+        <class>Tech_CustomExportImport_Helper</class>
+      </customexportimport>
+    </helpers>
+	<models>
+	  <customexportimport>
+		<class>Tech_CustomExportImport_Model</class>
+		<resourceModel>customexportimport_mysql4</resourceModel>
+	  </customexportimport>
+			<importexport>
+				<rewrite>
+					<export_entity_product>Tech_CustomExportImport_Model_ImportExport_Export_Entity_Product</export_entity_product>
+				</rewrite>
+			</importexport>
+			<importexport>
+				<rewrite>
+					<import_entity_product>Tech_CustomExportImport_Model_ImportExport_Import_Entity_Product</import_entity_product>
+				</rewrite>
+			</importexport>
+	</models>
+	
+	
+	
+  </global>
+  
+  <adminhtml>
+		<events>
+			<catalog_product_import_finish_before>
+				<observers>
+					  <customexportimport_adminhtml_import_finish_before>
+							<type>singleton</type>
+							<class>customexportimport/observer</class>
+							<method>importFinishBefore</method>
+					  </customexportimport_adminhtml_import_finish_before>
+				 </observers>
+			</catalog_product_import_finish_before>
+   	</events>
+	</adminhtml>
+	
+	
+</config> 

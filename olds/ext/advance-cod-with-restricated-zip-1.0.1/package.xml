@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<package>
+    <name>advance-cod-with-restricated-zip</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">OSLv3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>A Payment Gateway solution to increase sales by having zipcode based Cash on Delivery payment method at your Magento store checkout.</summary>
+    <description>A Payment Gateway solution to increase sales by having zipcode based Cash on Delivery payment method at your Magento store checkout.&#xD;
+&#xD;
+Our Advance Cash on delivery  will add a new payment gateway in your store with additional zipcode filter feature where COD payment method is available. Easy installation will immediately enable payment gateway option in admin payment method configuration section. Extension will look for billing/shipping zipcode to enable/disable cash on delivery payment method in checkout process.&#xD;
+&#xD;
+Note  :  Disable/Refresh Cache Management after installation of extension.&#xD;
+&#xD;
+Features &amp; Configuration control&#xD;
+  - Admin conrol panel for payment gateway configuration &#xD;
+  - Allow admin to Add/edit/update zipcode where Cash On Delivery method is available from admin panel.  &#xD;
+  - Auto Hide payment method when ZIPCODE is out of available zipcode list in admin panel&#xD;
+  &#xD;
+  &#xD;
+Standards&#xD;
+   - Follow all Magento coding standards for extension development &#xD;
+   - A complete upgrade safe solution &#xD;
+   &#xD;
+New Version Roadmap&#xD;
+  * Upload ZIPCODE list from CSV&#xD;
+  * Specify Method Title for different zipcode</description>
+    <notes>Features &amp; Configuration control&#xD;
+  - Admin control panel for payment gateway configuration &#xD;
+  - Allow admin to Add/edit/update zipcode where Cash On Delivery method is available from admin panel.  &#xD;
+  - Auto Hide payment method when ZIPCODE is out of available zipcode list in admin panel&#xD;
+  </notes>
+    <authors><author><name>SetuBridge Technolabs</name><user>SetuBridge</user><email>support@setubridge.com</email></author></authors>
+    <date>2014-03-06</date>
+    <time>10:20:17</time>
+    <contents><target name="magelocal"><dir name="Sbridge"><dir name="Advcashondelivery"><dir name="Block"><dir name="Form"><file name="Advcashondelivery.php" hash="935825baf1807ce0e44e2ecd1cb95419"/></dir><file name="Form.php" hash="8c75d326cab98e7b859b0be2b84ba0e5"/></dir><dir name="Helper"><file name="Data.php" hash="70aaaba78d5fd99c5cdb56b215ac8414"/></dir><dir name="Model"><file name="AdvcashondeliveryMethod.php" hash="a23d2fc00e8f2d4d991bf72ce7d587c1"/><file name="Zipaddvalid.php" hash="d10f4ff5a3e6aab31335a8aa4a652371"/></dir><dir name="etc"><file name="config.xml" hash="3f0dcea8fee029d5cafa9858d18b3272"/><file name="system.xml" hash="3f6c6b5ee15d79de33b588ece409abe6"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Sbridge_Advcashondelivery.xml" hash="3d04cdec08321307c4f7533d30f7bb46"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="advcashondelivery"><dir name="form"><file name="advcashondelivery.phtml" hash="b189e1c9c8ded94bad2a40027266ad8a"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

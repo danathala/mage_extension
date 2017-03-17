@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!--
+
+/**
+* Setubridge Technolabs
+* http://www.setubridge.com/
+* @author SetuBridge
+* @license http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
+**/
+
+-->
+
+<config>
+    <global>
+        <modules>
+            <Sbridge_Advcashondelivery>
+                <version>1.0.1</version>
+            </Sbridge_Advcashondelivery>
+        </modules>
+        <blocks>
+            <advcashondelivery>
+                <class>Sbridge_Advcashondelivery_Block</class>      <!-- Instruction Display -->
+            </advcashondelivery>
+        </blocks>
+
+        <!-- <helpers>
+        <advcashondelivery>
+        <class>Sbridge_Advcashondelivery_Helper_Data</class>
+        </advcashondelivery>
+        </helpers>-->
+
+        <!-- declare model group for new module -->
+        <models>
+            <!-- model group alias to be used in Mage::getModel('newmodule/...') -->
+            <Advcashondelivery>
+                <!-- base class name for the model group -->
+                <class>Sbridge_Advcashondelivery_Model</class>
+            </Advcashondelivery>
+        </models>
+        <!-- declare resource setup for new module -->
+        <resources>
+            <!-- resource identifier -->
+            <Sbridge_Advcashondelivery_setup>
+                <!-- specify that this resource is a setup resource and used for upgrades -->
+                <setup>
+                    <!-- which module to look for install/upgrade files in -->
+                    <module>Sbridge_Advcashondelivery</module>
+                </setup>
+                <!-- specify database connection for this resource -->
+                <connection>
+                    <!-- do not create new connection, use predefined core setup connection -->
+                    <use>core_setup</use>
+                </connection>
+            </Sbridge_Advcashondelivery_setup>
+            <Sbridge_Advcashondelivery_write>
+                <use>core_write</use>
+            </Sbridge_Advcashondelivery_write>
+            <Sbridge_Advcashondelivery_read>
+                <use>core_read</use>
+            </Sbridge_Advcashondelivery_read>
+        </resources>
+
+        <helpers>
+            <advcashondelivery>
+                <class>Sbridge_Advcashondelivery_Helper</class>
+            </advcashondelivery>
+        </helpers>
+
+
+    </global>
+
+    <!-- declare default configuration values for this module -->
+
+    <default>
+        <!-- 'payment' configuration section (tab) -->
+        <payment>
+            <!-- 'newmodule' configuration group (fieldset) -->
+            <advcashondelivery>
+                <!-- by default this payment method is inactive -->
+                <active>1</active>
+                <!-- model to handle logic for this payment method -->
+                <!--<model>Sbridge_Advcashondelivery_Model_AdvcashondeliveryMethod</model> Or ucan use below also -->
+                <model>Advcashondelivery/AdvcashondeliveryMethod</model>
+                <!-- order status for new orders paid by this payment method -->
+                <order_status>1</order_status>
+                <!-- default title for payment checkout page and order view page -->
+                <title>Advance Cash On Delivery Module</title>
+            </advcashondelivery>
+        </payment>
+    </default>
+</config>

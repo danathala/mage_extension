@@ -1,0 +1,15 @@
+<form action="<?php echo Mage::helper("adminhtml")->getUrl("*/*/importAttr/"); ?>" method="post" enctype="multipart/form-data">   
+	
+	<fieldset>
+		
+		<label for="m_csv">Import Imanufacturer</label>
+		<input id="m_csv" type="file" name="m_csv" />
+		<input type="hidden" name="check" id="check" value="checking" />
+		<input name="form_key" type="hidden" value="<?php echo Mage::getSingleton('core/session')->getFormKey() ?>" />
+		<input type="submit" name="submit" value="Import" />
+	
+	</fieldset>
+
+
+
+</form>

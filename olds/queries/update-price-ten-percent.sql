@@ -1,0 +1,1 @@
+UPDATE checking_procedure SET price = price+price*20/100 WHERE price > 600;

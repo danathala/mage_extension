@@ -1,0 +1,162 @@
+<div class="zip_container">
+	<label for="zip_code"><i class="fa icon-fw">&#xf041;</i><span>Check for 72 Hours delivery</span></label>
+	<input type="text" id="zip_code" class="zip_code" maxlength="6" value="" placeholder="Enter Pincode" required="required" />
+	<?php //echo $this->getBlockHtml('formkey') ?>
+	<button class="zip_code_button" type="button">Check</button>
+	<div class="messages">
+		<div class="error"></div>
+		<div class="success"></div>
+	</div>
+	
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+jQuery(document).ready(function() {
+	jQuery('#zip_code').on('keypress', function(e) {
+		if(e.keyCode==13) {
+			varifyZipCode();
+		}
+	});
+	jQuery(document).on('click','.zip_code_button',varifyZipCode);
+});
+
+	function varifyZipCode (e) {
+
+		var zip_code = jQuery.trim(jQuery('#zip_code').val());
+		var form_key = jQuery('input[type=hidden][name=form_key]').val();
+		//console.log(zip_code);
+		jQuery('.zip_container .success, .zip_container .error').empty();
+		
+		if(zip_code != "" && isNaN(zip_code) == false && zip_code.length == 6) {
+		
+			sendData		=	{
+				zipcode: zip_code,
+				timezone: '<?php echo Mage::getStoreConfig('general/locale/timezone'); ?>',
+				timestamp: '<?php echo Mage::getModel('core/date')->timestamp(time()); ?>',
+				form_key: form_key
+			}
+			console.log(sendData);
+			//return false;
+			jQuery.ajax({
+				type: "POST",
+				dataType: 'json',
+				url: "<?php echo $this->getUrl('checkdelivery/index/index'); ?>",
+				data: sendData,
+				success: function(response){
+					if(response.result) {
+						jQuery('.zip_container .success').html(response.message);
+					} else {
+						jQuery('.zip_container .error').html(response.error);
+					}
+				}
+			});
+		} else {
+			jQuery(".zip_container .error").html("Enter valid pin code");
+		}
+	}
+
+//]]>
+</script>
+
+<style type="text/css">
+.zip_container  label {
+    color: #1e1d1d;
+    font-size:26px; margin-right:18px;
+}
+.zip_container  label span {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 12px;
+}
+.zip_container {
+    
+    background: #f6f6f6;
+    border: 1px solid #ececec;
+    margin: 10px 0;
+    padding: 10px 13px;
+    width: 100%;  text-align: center;
+}
+.zip_container .zip_code {
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 6px 0 #e4e4e4 inset;
+    color: #666;
+    font-size: 15px;
+    padding: 6px 8px;
+    width: 180px; vertical-align: top; display:inline-block;
+}
+.zip_container .zip_code:focus {
+    border: 1px solid #ed0090;
+}
+.zip_container .zip_code_button {
+    background: #333333 none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    height: 34px;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;  vertical-align: top; display:inline-block;
+    width: 90px;
+}
+
+
+
+.zip_container .messages .error {
+    left: 3px;
+    position: relative;
+    text-align: left;
+    top: 0;
+    width: 180px;
+}
+.zip_container .messages .success {
+    color: green;
+    font-weight: bold;
+    left: 3px;
+    position: relative;
+    text-align: left;
+}
+
+.zip_container .messages {
+   left: 47%;
+    overflow: visible;
+    position: relative;
+    top: 0;
+    width: 51%;
+}
+
+.zip_container .messages li {
+    margin: 0;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 1100px) {
+.zip_container { float:left; text-align: left;}
+.zip_container .messages {
+    left: 0;
+    overflow: visible;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.zip_container .zip_code {
+    display: inline-block;
+    margin-bottom: 6px;
+    margin-right: 8px;  width:165px;
+}
+.zip_container .zip_code_button{ width:70px;}
+
+}
+@media only screen and (min-width: 300px) and (max-width: 991px) {
+.product-image-zoom .cloud-zoom-big{display:none!important;}
+}
+@media only screen and (min-width: 300px) and (max-width: 568px) {
+.zip_container label {
+    display: block;
+    margin-bottom: 10px;
+}
+}
+
+</style>

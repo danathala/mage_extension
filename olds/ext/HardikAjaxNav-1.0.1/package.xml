@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>HardikAjaxNav</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Provides full ajax catalog layered navigation on product listing page as well as search results page.</summary>
+    <description>Provides full ajax catalog layered navigation on product listing page as well as search results page.</description>
+    <notes>Sort By JS error fix on listing page</notes>
+    <authors><author><name>Hardik Gajjar</name><user>hardik_krishinc</user><email>hardik.gajjar@krishinc.com</email></author></authors>
+    <date>2013-07-13</date>
+    <time>09:18:05</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Hardik_Ajaxnav.xml" hash="7dbe4179ff7bce21322b47eec2d1f4b9"/></dir></target><target name="magelocal"><dir name="Hardik"><dir name="Ajaxnav"><dir name="controllers"><dir name="Catalog"><file name="CategoryController.php" hash="3acce078f816f6b3561ca713d50d6335"/><dir name="Product"><file name="CompareController.php" hash="d4a9bb84eb46034cbe48a6f71cf44025"/></dir></dir><dir name="Catalogsearch"><file name="ResultController.php" hash="e35ab6ce644db4e1904589b6f5e03eda"/></dir></dir><dir name="etc"><file name="config.xml" hash="7ab971f7dbeb8270f2c264a49ef8b7da"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="ajaxnav.xml" hash="fb40a05f8dce865cfb0696e0c4fd125c"/></dir><dir name="template"><dir name="ajaxnav"><file name="ajax.phtml" hash="3dc29022a740e93be58af56b54eb01d5"/></dir></dir></dir></dir></dir></target><target name="mageweb"><dir name="js"><dir name="ajaxnav"><file name="ajaxnav.js" hash="9a6506a590641d49d4aa65613ec536fd"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

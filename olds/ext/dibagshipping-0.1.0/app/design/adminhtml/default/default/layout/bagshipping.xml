@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <bagshipping_adminhtml_bagshipping_index>
+        <reference name="content">
+            <block type="bagshipping/adminhtml_bagshipping" name="bagshipping" />
+        </reference>
+    </bagshipping_adminhtml_bagshipping_index>
+    
+    <bagshipping_adminhtml_bagshipping_ordergrid>
+        <reference name="content">
+            <block type="bagshipping/adminhtml_ordergrid" name="ordergrid" />
+        </reference>
+    </bagshipping_adminhtml_bagshipping_ordergrid>
+    
+    <bagshipping_adminhtml_owner_index>
+        <reference name="content">
+            <block type="bagshipping/adminhtml_owner" name="bagshipping_owner" />
+        </reference>
+    </bagshipping_adminhtml_owner_index>
+</layout>

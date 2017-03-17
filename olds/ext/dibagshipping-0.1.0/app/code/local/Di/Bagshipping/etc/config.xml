@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+* Baggage Freight Module - Configuraion xml
+*
+* @category   DI
+* @package    Di_Bagshipping
+* @author     DI Dev Team
+* @website    http://www.di.net.au/
+*/
+-->
+<config>
+    <modules>
+        <Di_Bagshipping>
+            <version>0.1.0</version>
+        </Di_Bagshipping>
+    </modules>
+    <frontend>
+		<events>
+			<checkout_onepage_controller_success_action>
+				<observers>
+					<bagshipping_order_success>
+						<type>singleton</type>
+						<class>bagshipping/observer</class>
+						<method>saveOrderinBagshipping</method>
+					</bagshipping_order_success>
+				</observers>
+			</checkout_onepage_controller_success_action>
+		</events>
+
+	
+        <routers>
+            <bagshipping>
+                <use>standard</use>
+                <args>
+                    <module>Di_Bagshipping</module>
+                    <frontName>bagshipping</frontName>
+                </args>
+            </bagshipping>
+        </routers>
+        <layout>
+            <updates>
+                <bagshipping>
+                    <file>bagshipping.xml</file>
+                </bagshipping>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <bagshipping>
+                <use>admin</use>
+                <args>
+                    <module>Di_Bagshipping</module>
+                    <frontName>bagshipping</frontName>
+                </args>
+            </bagshipping>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+          
+            <bagshipping module="bagshipping">
+                <title>Baggagefreight Shipping</title>
+                <sort_order>71</sort_order>
+                <children>
+                    <owner module="bagshipping">
+                        <title>Store Owner Information</title>
+                        <sort_order>0</sort_order>
+                        <action>bagshipping/adminhtml_owner/signup</action>
+                    </owner>
+							
+                    <upload module="bagshipping">
+                        <title>Upload Package Details</title>
+                        <sort_order>1</sort_order>
+                        <action>bagshipping/adminhtml_bagshipping</action>
+                    </upload>
+							
+							
+                    <label module="bagshipping">
+                        <title>View Orders in Baggage Freight</title>
+                        <sort_order>3</sort_order>
+                        <action>bagshipping/adminhtml_bagshipping/vieworders</action>
+						<click>alert('aaa')</click>
+                    </label>
+                </children>
+            </bagshipping>
+        </menu>
+      
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <bagshipping>
+                            <title>Bagshipping Module</title>
+                            <sort_order>10</sort_order>
+                        </bagshipping>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <bagshipping>
+                    <file>bagshipping.xml</file>
+                </bagshipping>
+            </updates>
+        </layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <bagshipping>
+                <class>Di_Bagshipping_Model</class>
+                <resourceModel>bagshipping_mysql4</resourceModel>
+            </bagshipping>
+            <bagshipping_mysql4>
+                <class>Di_Bagshipping_Model_Mysql4</class>
+                <entities>
+                    <bagshipping>
+                        <table>baggage_excel</table>
+                    </bagshipping>
+                    <order>
+                        <table>baggage_order</table>
+                    </order>
+                    <owner>
+                        <table>baggage_storeowner</table>
+                    </owner>
+                </entities>
+            </bagshipping_mysql4>
+        </models>
+        <resources>
+            <bagshipping_setup>
+                <setup>
+                    <module>Di_Bagshipping</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </bagshipping_setup>
+            <bagshipping_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </bagshipping_write>
+            <bagshipping_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </bagshipping_read>
+        </resources>
+        <blocks>
+            <bagshipping>
+                <class>Di_Bagshipping_Block</class>
+            </bagshipping>
+        </blocks>
+        <helpers>
+            <bagshipping>
+                <class>Di_Bagshipping_Helper</class>
+            </bagshipping>
+        </helpers>
+    </global>
+    <default>
+        <carriers>
+            <bagshipping>
+                <active>1</active>
+                <model>bagshipping/carrier_customrate</model>
+                <title>Baggage Freight Shipping</title>
+                <name>Baggage Freight Rate</name>
+            </bagshipping>
+        </carriers>
+    </default>
+</config>

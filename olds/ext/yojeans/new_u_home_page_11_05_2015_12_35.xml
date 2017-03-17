@@ -1,0 +1,48 @@
+<reference name="head">
+	<action method="addItem" ifconfig="sales/msrp/enabled"><type>skin_js</type><name>js/msrp.js</name></action>
+<action method="addItem"><type>skin_js</type><name>js/jquery.flexslider.js</name></action>
+	<action method="addItem"><type>skin_js</type><name>js/flexslider_custom.js</name></action>
+	<action method="addItem"><type>skin_css</type><name>css/flexslider.css</name></action>
+</reference>
+<!--
+<reference name="content">
+	<block type="core/template" template="catalog/msrp/popup.phtml" name="product.tooltip"></block>
+	<block type="catalog/product_new" name="home.catalog.product.new" alias="product_new" after="cms.wrapper" template="catalog/product/new.phtml">
+	<action method="setColumnCount"><columns>4</columns></action>
+	<action method="setProductsCount"><count>10</count></action>
+	<action method="addPriceBlockType"><type>bundle</type><block>bundle/catalog_product_price</block><template>bundle/catalog/product/price.phtml</template></action>
+	<action method="unsetData"><key>cache_lifetime</key></action>
+	<action method="unsetData"><key>cache_tags</key></action>
+	</block>
+</reference>-->
+
+<!--
+<reference name="content">
+	<block type="setnew/catalog_product_bestseller" name="new_bestseller" template="catalog/product/new_bestseller.phtml">
+		<action method="setProductsCount"><count>15</count></action>
+		<action method="setHeader"><header>Best Sellers</header></action>
+	</block>
+</reference>-->
+
+
+<reference name="content">
+	<block type="setnew/catalog_product_bestseller" name="new_bestseller" template="catalog/product/new_bestseller.phtml">
+		<action method="setProductsCount"><count>15</count></action>
+		<action method="setHeader"><header>Best Sellers</header></action>
+<action method="setCategoryId"><categoryid>560</categoryid></action>
+	</block>
+</reference>
+
+
+
+<reference name="content">
+	<block type="setnew/catalog_product_offers" name="home.catalog.product.offers" alias="home_product_offer" after="home.catalog.product.new" template="catalog/product/offers.phtml">
+	<action method="setColumnCount"><columns>4</columns></action>
+<action method="setColumnCount"><columns>4</columns></action>
+	<action method="setCategoryId"><categoryid>535</categoryid></action>
+	<action method="addPriceBlockType"><type>bundle</type><block>bundle/catalog_product_price</block><template>bundle/catalog/product/price.phtml</template></action>
+	<action method="unsetData"><key>cache_lifetime</key></action>
+	<action method="unsetData"><key>cache_tags</key></action>
+	</block>
+</reference>
+

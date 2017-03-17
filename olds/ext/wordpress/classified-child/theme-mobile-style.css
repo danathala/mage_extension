@@ -1,0 +1,108 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,500,700,300);
+@import url(http://fonts.googleapis.com/css?family=Exo:400,500,600,700);
+body { color: #333; font-family: 'Ubuntu', sans-serif; font-size: 16px; font-weight: 300; line-height: 1.8;}
+h1, h2, h3, h4, h5, h6{font-family: 'Exo', sans-serif;}
+dl dd{font-weight: 300;}
+.tmpl-accordion .tmpl-accordion-navigation > a{font-weight: 400;}
+
+.tab-bar{background: #DF3539; border: 0;}
+body .toggle_handler.primary_location #directorytab,.tab-bar a{color: #FFF;}
+.tab-bar a:hover{color: rgba(0, 0, 0, 0.3);}
+.tab-bar .menu-icon{ color: #2D2D2D}
+.tab-bar .menu-icon span{ box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;}
+.tab-bar-section.middle{background: transparent;}
+.mobile-view.location_manager .primary_menu_wrapper{margin-top: 0;}
+.location_fld_wrapper .toggle_handler{width: 45px;}
+.mobile-view .category_list_wrap h3 a, .mobile-view .category_list_wrap h3 a{background: #F6F6F6;}
+
+#searchform input[type="submit"], .upload, body.woocommerce #content input.button, body.woocommerce #content input.button.alt, body.woocommerce #respond input#submit, body.woocommerce #respond input#submit.alt, body.woocommerce .widget_layered_nav_filters ul li a, body.woocommerce a.button, body.woocommerce a.button.alt, body.woocommerce button.button, body.woocommerce button.button.alt, body.woocommerce input.button, body.woocommerce input.button.alt, body.woocommerce-page #content input.button, body.woocommerce-page #content input.button.alt, body.woocommerce-page #respond input#submit, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page .widget_layered_nav_filters ul li a, body.woocommerce-page a.button, body.woocommerce-page a.button.alt, body.woocommerce-page button.button, body.woocommerce-page button.button.alt, body.woocommerce-page input.button, body.woocommerce-page input.button.alt, div.woocommerce form.track_order input.button,.mobile-view .button:hover, .mobile-view .uploadfilebutton:hover, .mobile-view a.button:hover, .mobile-view button:hover, .mobile-view input[type="button"]:hover, .mobile-view input[type="reset"]:hover, .mobile-view input[type="submit"]:hover,.mobile-view #content .claim-post-wraper > ul > li > a,.mobile-view .button, .mobile-view .uploadfilebutton, .mobile-view a.button, .mobile-view button, .mobile-view input[type="button"], .mobile-view input[type="reset"], .mobile-view input[type="submit"]{
+	background: #2d2d2d;
+}
+
+.mobile-view .left-off-canvas-menu,
+body .secondary_btn:hover, .comment-pagination .page-numbers:hover strong, strong.prev:hover, strong.next:hover, .loop-nav span.next:hover, .loop-nav span.previous:hover, .pagination .page-numbers:hover strong, body .pos_navigation .post_left a:hover, body .pos_navigation .post_right a:hover, a.current.page-numbers, a.page-numbers[title~="Last"]:hover, a.page-numbers[title~="First"]:hover,
+.small_btn:hover,.secondary_btn:hover,.page-numbers:hover,span.next:hover,span.previous:hover,.page-numbers:hover,.post_left a:hover,.post_right a:hover,
+#content input.button:hover, #searchform input[type="submit"]:hover, .upload:hover, body.woocommerce #cotent input.button.alt:hover, body.woocommerce #content input.button:hover, body.woocommerce #respond input#submit.alt:hover, body.woocommerce #respond input#submit:hover, body.woocommerce .widget_layered_nav_filters ul li a:hover, body.woocommerce a.button.alt:hover, body.woocommerce a.button:hover, body.woocommerce button.button.alt:hover, body.woocommerce button.button:hover, body.woocommerce input.button.alt:hover, body.woocommerce input.button:hover, body.woocommerce-page #content input.button.alt:hover, body.woocommerce-page #content input.button:hover, body.woocommerce-page #respond input#submit.alt:hover, body.woocommerce-page #respond input#submit:hover, body.woocommerce-page .widget_layered_nav_filters ul li a:hover, body.woocommerce-page a.button.alt:hover, body.woocommerce-page a.button:hover, body.woocommerce-page button.button.alt:hover, body.woocommerce-page button.button:hover, body.woocommerce-page input.button.alt:hover, body.woocommerce-page input.button:hover, div.woocommerce form.track_order input.button:hover,.mobile-view .button:hover, .mobile-view .uploadfilebutton:hover, .mobile-view a.button:hover, .mobile-view button:hover, .mobile-view input[type="button"]:hover, .mobile-view input[type="reset"]:hover, .mobile-view input[type="submit"]:hover,.mobile-view #content .claim-post-wraper > ul > li > a:hover,.mobile-view .button:hover, .mobile-view .uploadfilebutton:hover, .mobile-view a.button:hover, .mobile-view button:hover, .mobile-view input[type="button"]:hover, .mobile-view input[type="reset"]:hover, .mobile-view input[type="submit"]:hover{
+	background: #DF3539;
+}
+
+ol li a:hover, ul li a:hover,h1,h2,h3,h4,h5,h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,
+#content .claim-post-wraper ul li a:hover,
+.listing_post .hentry h2 a:hover,
+a,.all_category_list_widget .category_list ul li a,.mobile-view .list .entry h2.entry-title, .mobile-view .grid .entry h2.entry-title, .mobile-view .entry h2.entry-title, .mobile-view .list .entry h2.entry-title a, .mobile-view .grid .entry h2.entry-title a, .mobile-view .entry h2.entry-title a, .mobile-view #content .peopleinfo-wrap h3 .fl a,
+.tmpl-accordion .tmpl-accordion-navigation > a,.mobile-view .flexslider .slides h3,
+.mobile-view .flex-direction-nav a:before{
+	color: #000;
+}
+
+.all_category_list_widget .category_list h3 a:hover,
+.listing_post .hentry h2 a,
+.mobile-view footer.footer a:hover,
+.entry-links-mobile ul li a:hover{
+	color: #DF3539;
+}
+
+body #site-title,body #site-title1{ line-height: 44px;}
+
+.mobile-search{ color: white;}
+.comment-meta a:hover{color: #DF3539;}
+.mobile-view footer.footer { background-color: #333333; color: #FFF;}
+
+.mobile-view .tab-bar{height: 2.8125rem}
+.mobile-view .mobile-listing-header{ background: #FFF;}
+.mobile-view .toggle_handler #directorytab, .mobile-view .mobile-search, .mobile-view .mobile-search:hover,.mobile-view .tab-bar .menu-icon{ color: #fff;}
+.mobile-view .tab-bar .menu-icon span{ box-shadow: 0 0 0 1px #fff, 0 7px 0 1px #fff, 0 14px 0 1px #fff;}
+.mobile-view .left-small,.mobile-view .toggle_handler #directorytab{border-color:rgba(0, 0, 0, 0.2);}
+.mobile-view .header-wrap .large-8.columns{padding: 0;}
+/*title color*/
+body .left-off-canvas-menu ul li a, body .left-off-canvas-menu .mega-menu ul.mega li .sub li.mega-hdr li a, body .right-off-canvas-menu .mega-menu ul.mega li .sub li.mega-hdr li a, ul.off-canvas-list li a, body .left-off-canvas-menu .nav_bg ul.mega li a, body .right-off-canvas-menu .nav_bg ul.mega li a, div#menu-mobi-secondary .menu .off-canvas-list li a, div#menu-mobi-secondary1 .menu .off-canvas-list li a, div#menu-subsidiary .menu .off-canvas-list li a, body .left-off-canvas-menu div#menu-mobi-primary .menu > ul > li > a, body .right-off-canvas-menu div#menu-mobi-primary .menu > ul > li > a{ color: #FFF!important;}
+/* button */
+#searchform input[type="submit"], .upload, body.woocommerce #content input.button, body.woocommerce #content input.button.alt, body.woocommerce #respond input#submit, body.woocommerce #respond input#submit.alt, body.woocommerce .widget_layered_nav_filters ul li a, body.woocommerce a.button, body.woocommerce a.button.alt, body.woocommerce button.button, body.woocommerce button.button.alt, body.woocommerce input.button, body.woocommerce input.button.alt, body.woocommerce-page #content input.button, body.woocommerce-page #content input.button.alt, body.woocommerce-page #respond input#submit, body.woocommerce-page #respond input#submit.alt, body.woocommerce-page .widget_layered_nav_filters ul li a, body.woocommerce-page a.button, body.woocommerce-page a.button.alt, body.woocommerce-page button.button, body.woocommerce-page button.button.alt, body.woocommerce-page input.button, body.woocommerce-page input.button.alt, div.woocommerce form.track_order input.button,.mobile-view .button:hover, .mobile-view .uploadfilebutton:hover, .mobile-view a.button:hover, .mobile-view button:hover, .mobile-view input[type="button"]:hover, .mobile-view input[type="reset"]:hover, .mobile-view input[type="submit"]:hover,.mobile-view #content .claim-post-wraper > ul > li > a,.mobile-view .button, .mobile-view .uploadfilebutton, .mobile-view a.button, .mobile-view button, .mobile-view input[type="button"], .mobile-view input[type="reset"], .mobile-view input[type="submit"]{color: #FFF!important;}
+
+.mobile-view .toggle_handler #directorytab { display: block; }
+.mobile-view .button:hover, .mobile-view .uploadfilebutton:hover, .mobile-view a.button:hover, .mobile-view button:hover, .mobile-view input[type="button"]:hover, .mobile-view input[type="reset"]:hover, .mobile-view input[type="submit"]:hover{border-color: #DF3539;}
+.mobile-view .location_fld_wrapper{margin-top: -45px;}
+.mobile-view .classified_search{margin: 15px 0 30px;}
+.mobile-view .classified_search .search_nearby_widget{ text-align: left;}
+body.mobile-view .classified_search .search_nearby_widget input,body.mobile-view .classified_search .search_nearby_widget input[type="submit"].sgo,body.mobile-view .classified_search .textwidget .post-free-classifieds-btn{width: 100%; max-width: 100%; font-weight: 700; font-size: 15px;}
+
+.mobile-view .category_list_wrap h3 a, .mobile-view .category_list_wrap h3 a{border-bottom-color: #c8c8c8;}
+.mobile-view #map-container{ margin: 0;}
+.mobile-view .average_rating_wrapper .average_rating{margin: 10px;}
+.mobile-view #comments{margin-top: 0;}
+body.mobile-view .entry .classified-title h2.entry-title ~ [class*="rating"]{display: block; margin: 5px 0 0;}
+.mobile-view .select-wrap .tev_options_sel + span.select:after{top: 2px;}
+.mobile-view #listpagi .pagination a,.comment-pagination .page-numbers strong, .pagination .page-numbers strong, strong.prev, strong.next, .expand.page-numbers, a.page-numbers[title~="Last"], a.page-numbers[title~="First"], span.page-numbers.dots, .loop-nav span.next, .loop-nav span.previous, body .pos_navigation .post_left a, body .pos_navigation .post_right a,body .secondary_btn:hover, .comment-pagination .page-numbers:hover strong, strong.prev:hover, strong.next:hover, .loop-nav span.next:hover, .loop-nav span.previous:hover, .pagination .page-numbers:hover strong, body .pos_navigation .post_left a:hover, body .pos_navigation .post_right a:hover, a.current.page-numbers, a.page-numbers[title~="Last"]:hover, a.page-numbers[title~="First"]:hover{ border-radius: 0;}
+a.current.page-numbers{padding-top: 5px; padding-bottom: 5px;}
+.mobile-view .hentry .entry-header{ padding: 0 15px; margin-left: -15px; margin-right:-15px; width: auto;}
+.mobile-view .get_direction{padding: 0 15px;}
+
+body .header_container .header-wrap .header-widget-wrap #sidebar-header form > input[type="text"],
+.header-widget-wrap #sidebar-header form input[type="text"], #sidebar-header form .select-wrap,
+body.tevolution-directory #sidebar-header .search_nearby_widget #searchform input[type="text"]{ border: 0px; box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); margin: 0; width: 100%; max-width: 100%; font-size: 18px; padding: 15px 10px;}
+.sidebar .templatic-advanced-search #searchform { position: relative; }
+.sidebar .templatic-advanced-search #searchform .form_row:only-of-type ~ input[type="submit"],
+.sidebar .search_key .search_nearby_widget.what_fld_search #searchform input[type="submit"] { position: absolute; right: 0; top: 0; border-radius: 0; padding: 10px 15px; margin: 0; height: 100%;}
+body .header_container .header-wrap .header-widget-wrap #sidebar-header form input[type="submit"]{ opacity: 0; z-index: 10;}
+body .header_container .header-wrap .header-widget-wrap #sidebar-header form .search-icon{ position: absolute; right: 0; height: 100%; width: 50px; top: 0; text-align: center; z-index: 1; cursor: pointer;}
+body .header_container .header-wrap .header-widget-wrap #sidebar-header form .search-icon i{ margin: 15px 0 0; font-size: 21px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease;}
+
+body a.button.post-free-classifieds-btn{ display: none;}
+body.mobile-view .entry-links-mobile ul li{float: none; margin-left: -5px;}
+body.mobile-view .entry-links-mobile ul li:first-child a{ border: 0;}
+body.mobile-view .entry-links-mobile ul li:last-child a{  border-left: 0;}
+body.mobile-view .entry-links-mobile ul li a,.mobile-view .entry-links-mobile ul li.fav a{padding: 10px 0;}
+.mobile-view #comments li .comment-meta .published{font-size: 13px;}
+
+body.mobile-view .classified_info-right .classified-info p.zip_code:before{ content: '\f02a';}
+body.mobile-view .classified_info-right .classified-info p.classified_tag:before{ content: '\f02c';}
+body.mobile-view .post_slider{ background: transparent; padding: 20px 0;}
+body.mobile-view .flex-direction-nav a:before{top: -22px;}
+.mobile-view .flexslider .slides img{ width: auto; margin: 0 auto 10px;}
+.mobile-view .flexslider .slides h3{margin-bottom: 0;}
+body.tevolution-directory.mobile-view .ui-widget-content.ui-autocomplete.ui-front{max-width: 90%; z-index: 10;}
+.mobile-view.singular-classified .supreme_wrapper .get_direction #from-input{clear: both; display: block; margin-right: auto; margin-left: auto;}
+.slider_carousel .slides li { margin-right: 25px;}
+.middle.tab-bar-section a img{padding: 13px 0 9px;}
+
+.menu-home-page-category-container .nav-menu li a i{ margin-right: 10px;}
