@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+   <affiliate_adminhtml_affiliatebackend_index>
+      <reference name="content">
+         <block type="affiliate/adminhtml_affiliatebackend" name="affiliatebackend" template="affiliate/affiliatebackend.phtml"/>
+      </reference>
+   </affiliate_adminhtml_affiliatebackend_index>
+   
+   <affiliate_adminhtml_amazon_index>
+      <!-- <update handle="editor"/> -->
+      <reference name="content">
+         <block type="affiliate/adminhtml_affiliatebackend" name="affiliatebackend" template="affiliate/affiliate_amz.phtml"/>
+      </reference>
+   </affiliate_adminhtml_amazon_index>
+   
+   <affiliate_adminhtml_amazon_new>
+      <!-- <update handle="editor"/> -->
+      <reference name="content">
+         <block type="affiliate/adminhtml_amazon_form_edit" name="adminform"/>
+      </reference>
+   </affiliate_adminhtml_amazon_new>
+</layout>
